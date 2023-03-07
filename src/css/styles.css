@@ -1,0 +1,119 @@
+*{
+    box-sizing: border-box;
+}
+header {
+    text-align: center;
+    color: lightseagreen;
+    font-size: larger;
+    font-weight: 800;
+    border: solid;
+    border-color: black;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 10px 5px darkgray;
+    margin: 15px
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+.employee-container {
+    margin: 15px;
+    display: grid;
+    justify-content: center;
+    border: solid;
+    border-radius: 10px;
+    box-shadow: 10px 5px darkgray;
+}
+.manager{
+    display: grid;
+    text-align: center;
+    border: solid;
+    border-color: blue;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 5px;
+    justify-self: center;
+    box-shadow: 10px 5px lightblue;
+}
+.manager-role-title{
+    margin: 0;
+    padding: 0px 5px 5px 5px;
+    font-size: 30px;
+    font-weight: 800;
+    color: black;
+    border-bottom: solid;
+   }
+.manager-content{
+    border: none;
+    padding: 10px;
+}
+
+.team {
+    flex: auto;
+}
+.engineers{
+    display: grid;
+    text-align: center;
+    border: solid;
+    border-color: green;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 5px;
+    justify-self: center;
+    box-shadow: 10px 5px lightgreen;
+}
+.engineer-role-title{
+    margin: 0;
+    padding: 0px 5px 5px 5px;
+    font-size: 30px;
+    font-weight: 800;
+    color: black;
+    border-bottom: solid;
+}
+.engineers-content{
+    border: none;
+    display: flex;
+    padding: 10px;
+}
+.interns{
+    display: grid;
+    text-align: center;
+    border: solid;
+    border-color: red;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 5px;
+    justify-self: center;
+    box-shadow: 10px 5px palevioletred;
+   }
+.intern-role-title{
+    margin: 0;
+    padding: 0px 5px 5px 5px;
+    font-size: 30px;
+    font-weight: 800;
+    color: black;
+    border-bottom: solid;
+}
+.interns-content{
+    justify-content: center;
+    display: flex;
+    border: none;
+    padding: 10px;
+}
+.employee-card{
+    border: solid;
+    border-radius: 10px;
+    margin: 10px;
+}
+.employee-content-line{
+    padding: 5px; 
+    background-color: white;
+    
+}
+.name{
+    font-size: 18px;
+       font-weight: 500;
+       color: black;
+       border-bottom: solid;
+}
