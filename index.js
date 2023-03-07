@@ -9,7 +9,7 @@ const Engineer = require("./lib/Engineer")
 const Intern = require("./lib/Intern")
 
 //this imports the html generation functionality
-const {GenerateHtmlContent, ManagerInfoHTML, EngineerInfoHTML, InternInfoHTML} = require('./src/html-content');
+const {GenerateHtmlContent, ManagerInfoHTML, EngineerInfoHTML, InternInfoHTML} = require('./dist/html-content');
 
 
 
