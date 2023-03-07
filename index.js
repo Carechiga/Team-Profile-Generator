@@ -3,10 +3,12 @@ const inquirer = require("inquirer");
 //had to install lopp functionality with inquirer using  "npm install --save inquirer-loop"
 inquirer.registerPrompt("loop", require("inquirer-loop")(inquirer))
 
+//this imports the project role classes
 const Manager = require("./lib/Manager")
 const Engineer = require("./lib/Engineer")
 const Intern = require("./lib/Intern")
 
+//this imports the html generation functionality
 const {GenerateHtmlContent, ManagerInfoHTML, EngineerInfoHTML, InternInfoHTML} = require('./src/html-content');
 
 
@@ -102,13 +104,15 @@ inquirer.prompt([
             engineerArray.push(engineer);
         }
     }
-    console.log(internArray);
-    console.log(engineerArray);
+    // console.log(manager);
+    // console.log(internArray);
+    // console.log(engineerArray);
     const managerHtml = ManagerInfoHTML(manager);
     const internHtml = InternInfoHTML(internArray);
     const engineerHtml = EngineerInfoHTML(engineerArray);
     const htmlFileContent = GenerateHtmlContent(projectName, managerHtml, engineerHtml, internHtml);
 
+    //this writes the index.html file
     fs.writeFile('index.html', htmlFileContent, (err)=> 
     err ? console.error : console.log('Generating HTML'));
 }))
