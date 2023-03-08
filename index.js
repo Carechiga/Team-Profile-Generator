@@ -9,7 +9,7 @@ const Engineer = require("./lib/Engineer")
 const Intern = require("./lib/Intern")
 
 //this imports the html generation functionality
-const {GenerateHtmlContent, ManagerInfoHTML, EngineerInfoHTML, InternInfoHTML} = require('./dist/html-content');
+const {GenerateHtmlContent, ManagerInfoHTML, EngineerInfoHTML, InternInfoHTML} = require('./src/html-content');
 
 
 
@@ -112,7 +112,7 @@ inquirer.prompt([
     const engineerHtml = EngineerInfoHTML(engineerArray);
     const htmlFileContent = GenerateHtmlContent(projectName, managerHtml, engineerHtml, internHtml);
 
-    //this writes the index.html file
-    fs.writeFile('index.html', htmlFileContent, (err)=> 
+    //this writes the index.html file to dist folder
+    fs.writeFile('./dist/index.html', htmlFileContent, (err)=> 
     err ? console.error : console.log('Generating HTML'));
 }))
