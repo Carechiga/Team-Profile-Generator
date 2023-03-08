@@ -24,6 +24,8 @@ A few things need to be installed in order to run this application. inquirer nee
 
 to run the program execute in "node index.js" in the terminal and you will be prompted with a series of questions including your project name and the members you wish to add to you team (with a little biit of info about each member". Once all the members have been input you can exit out of the application and the index.html file will be created in the same root directory. 
 
+Here is a link to the video demonstration of the app: https://www.youtube.com/watch?v=AH7CA4KRLbY
+
 ## Credits
 
 
